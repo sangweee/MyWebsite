@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    
+}
+:root{
+    --color1:#204F4E;
+    --color2: #1111;
+}
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+font-family: 'Oswald', sans-serif;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.color{
+    display: flex;
+    justify-content: center;
+}
+#c1{
+    width: 15px;
+    height: 15px;
+    background-color: #204F4E;
+    margin: 5px;
+}
+#c2{
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    margin: 5px;
+}
+#c3{
+    width: 15px;
+    height: 15px;
+    background-color: lemonchiffon;
+    margin: 5px;
+}
+h2{
+    margin: 10px;
+    color: #F2BA5F;
+    text-align: center;
+    border-bottom: 2px solid #F2BA5F;
+    border-top: 2px solid #F2BA5F;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header{
+    background-color: var(--color2);
+    border-bottom: 1px solid black;
+}
+header img{
+    width: 80px;
+}
+header nav a{
+    text-align: center;
+}
+nav{
+    text-align: center  ;
+    background-color: var(--color2);
+    
+}
+nav a {
+    color: #F2BA5F;
+    padding: 12px;
+    text-align: center;
+    font-size: 25px;
+    display: block;
+   
+}
+.slides{
+    position: relative;
+    text-align: center;
+}
+.slides .bi-arrow-left-circle{
+    color: white;
+    position: absolute;
+    left: 10px;
+    top:40%;
+    font-size: 3rem;
+}
+.slides .bi-arrow-right-circle{
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    font-size: 3rem;
+}
+.slides .list-banner{
+    position: absolute;
+    bottom: 5%;
+    font-size: 5rem;
+    text-align: center;
+    left: calc(50% - 40px);
+}
+toogles{
+    font-size: 50px;
+}
+.list-tour article{
+   
+    background-color: white;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.851);
+    border-radius: 10px;
+    width: 100%;
+}
+.list-tour img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    height: 250px;
+    transition: 0.5s;
+}
+.list-tour div{
+    overflow: hidden;
+}
+.list-tour article img:hover{
+    transform: scale(1.1);
+}
+ article button{
+    
+    font-size: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    background-color: var(--color2);
+    padding: 10px;
+}
+article button:hover{
+    background-color: white;
+    color: #204F4E;
+    border: 2px solid #204F4E;
+    transition: 0.5s;
+}
+article p b{
+    font-size: 30px;
+}
+.item1{
+    grid-area: item1;
+}
+.item2{
+    grid-area: item2;
+}
+.item3{
+    grid-area: item3;
+}
+.item4{
+    grid-area: item4;
+}
+.item5{
+    grid-area: item5;
+}
+.grid-container img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.grid-container{
+    padding: 10px;
+    
+}
+.grid-container .item{
+    box-shadow: 0 0 2px black;
+}
+.grid-container p{
+    margin: 10px;
+}
+
+.banner{
+    position: relative;
+
+}
+.banner::before{
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left,rgba(255,255,255,0)0%,rgba(255,255,255,3)100%);
+    background: linear-gradient(to right,rgba(255,255,255,0)0%,rgba(rgba(255,255,255,3)100%));
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+}
+.banner:hover::before{
+    -webkit-animation: shine 1s;
+    animation: shine 1s;
+}
+@-webkit-keyframes shine{
+    100%{
+        left: 125%;
+    }
+}
+@keyframes shine{
+    100%{
+        left: 100%;
+    }
+}
+footer{
+    
+    background-color: var(--color2);
+}
+footer section {
+    color: #F2BA5F;
+    padding: 15px;
+}
+
+.grid-container p{
+    padding: 5px;
+}
+/* Điện thoại đứng */
+@media screen and (min-width:240px) {
+    
+   }
+/* máy tính bảng dọc */
+@media screen and (min-width:768px) {
+    .list-tour, nav{
+        display: flex;
+    }
+    .toggles{
+        display: none;
+    }
+   }
+/* Laptop và máy tích bảng ngang */
+@media screen and (min-width:1024px) {
+    nav{
+        justify-content: center;
+    }
+    section{
+        margin-left: 12%;
+        margin-right: 12%;
+        justify-content: center;
+    }
+    .list-tour article{
+        margin: 10px;
+    }
+
+   .grid-container{
+    display: grid;
+    grid-template-areas:
+    'item3 item3 item1 item2'
+    'item3 item3 item4 item5'
+     ;
+     gap: 10px;
+   }
+   footer section{
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+   }
+   footer section div{
+    padding: 20px;
+   }
+   }

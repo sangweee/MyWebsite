@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website du lịch</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&family=Oswald:wght@200&display=swap" rel="stylesheet">
+</head>
+<body onload="loadTheme()">
+    <header>
+        <img src="logor.png" alt="">
+        <div class="toggles">
+            <i style="font-size: 50px;" class="bi bi-list"></i>
+        </div>
+        <div class="color">
+            <div id="c1"></div>
+            <div id="c2"></div>
+            <div id="c3"></div>
+        </div>
+    </header>
+    <nav>
+        <a href="">Tour hot</a>
+        <a href="">Đặt tour</a>
+        <a href="">Tin tức</a>
+        <a href="">Đăng nhập</a>
+    </nav>
+    <div class="slides">
+        <img id="banner" src="banner.jpg" width="100%" alt="">
+        <i class="bi bi-arrow-left-circle" onclick="prev()"></i>
+        <i class="bi bi-arrow-right-circle" onclick="next()"></i>
+        <div class="list-banner">
+            <span id="0">.</span>
+            <span id="1">.</span>
+            <span id="2">.</span>
+        </div>
+    </div>
+    <main>
+        <h2>
+            Danh sách các tour du lịch
+        </h2>
+        <section class="list-tour">
+            <article>
+                <img src="danang.jpg" alt="">
+                <p><b>Tour Đà Nẵng</b></p>
+                <p>Giá: 4.200.200 đ</p>
+                <span style="font-size: 18px; color: rgb(80, 80, 80);">3 ngày 2 đêm</span>
+                <button>Book ngay</button>
+            </article>
+            <article>
+                <img src="nha-trang.jpg" alt="">
+                <p><b>Tour Nha Trang</b></p>
+                <p>Giá: 4.200.200 đ</p>
+                <span style="font-size: 18px; color: rgb(80, 80, 80);">3 ngày 2 đêm</span>
+                <button>Book ngay</button>
+            </article>
+            <article>
+                <img src="phuquoc.jpg" alt="">
+                <p><b>Tour Phú Quốc</b></p>
+                <p>Giá: 4.200.200 đ</p>
+                <span style="font-size: 18px; color: rgb(80, 80, 80);">3 ngày 2 đêm</span>
+                <button>Book ngay</button>
+            </article>
+            <article>
+                <img src="sapa-trong-may-mu-16349480971052073044867.jpg" alt="">
+                <p><b>Tour Sapa</b></p>
+                <p>Giá: 4.200.200 đ</p>
+                <span style="font-size: 18px; color: rgb(80, 80, 80);">3 ngày 2 đêm</span>
+                <button>Book ngay</button>
+            </article>
+        </section>
+       <h2>Các tour du lịch quốc tế</h2>
+       <section class="grid-container">
+            <div style="background-color: var(--color2);border-radius: 20px;" class="item1">
+                <img src="kinh-nghiem-du-lich-han-quoc-tu-tuc-1-1024x684.webp" alt="">
+                <p style="color: #F2BA5F;">Du lịch Hàn Quốc</p>
+            </div>
+            <div style="background-color: var(--color2);border-radius: 20px;" class="item2">
+                <img src="kinh-nghiem-du-lich-phap.jpg" alt="">
+                <p style="color: #F2BA5F;">Du lịch Pháp</p>
+            </div>
+            <div style="background-color: var(--color2);border-radius: 20px;" class="item3">
+                <img src="kinh-nghiem-du-lich-singapore-1.webp" alt="">
+                <p style="color: #F2BA5F;">Du lịch Singapore</p>
+            </div>
+            <div style="background-color: var(--color2);border-radius: 20px;" class="item4">
+                <img src="tải xuống (1).jpg" alt="">
+                <p style="color: #F2BA5F;">Du lịch Nhật Bản</p>
+            </div>
+            <div style="background-color: var(--color2);border-radius: 20px;" class="item5">
+                <img src="new-york-1227.jpg" alt="">
+                <p style="color: #F2BA5F;">Du lịch New York</p>
+            </div>
+       </section>
+       <section class="banner">
+        <img style="width: 100%;border-radius: 10px;" src="Picture1.png" alt="">
+       </section>
+        <aside></aside>
+    </main>
+    <footer>
+        <section>
+            <div>
+                <img src="logor.png" alt="">
+            </div>
+            <div class="">
+                <h3>Liên hệ</h3><br>
+                <hr>
+                <p>Email:thanhsangts2706@gmail.com</p><br>
+                <p>SĐT:0123456789</p><br>
+                <p>Mã số thuế:0345813171</p><br>
+                <p>GPKD lữ hành quốc tế số: 79-400/2015/TCDL</p><br>
+            </div>
+            <div>
+                <h3>Địa chỉ</h3>
+                <hr>
+                <br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d777.5170363260667!2d106.62662520076121!3d10.854024255899079!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752a20d8555e69%3A0x743b1e9558fb89e0!2sQTSC%209%20Building!5e0!3m2!1svi!2s!4v1685071430588!5m2!1svi!2s" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div>
+                <h3>Kết nối</h3>
+                <hr>
+                <br>
+                <i style="font-size: 30px;padding-left: 5px;" class="bi bi-facebook"></i>
+                <i style="font-size: 30px;padding-left: 5px;" class="bi bi-tiktok"></i>
+                <i style="font-size: 30px;padding-left: 5px;" class="bi bi-instagram"></i>
+                <br>
+                <br>
+                <button style="background-color: #F2BA5F;padding: 20px;border-radius: 20px;">Bạn cần hỗ trợ?</button>
+            </div>
+        </section>
+    </footer>
+    <script>
+        $(document).ready(function(){
+          $(".toggles").click(function(){
+            $("nav").toggle();
+          });
+        });
+        </script>
+   <script src="main.js"></script>
+</body>
+</html>
